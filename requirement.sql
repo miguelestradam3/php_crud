@@ -1,0 +1,1 @@
+CREATE TABLE `subscribers` (`Personid` int NOT NULL AUTO_INCREMENT, `email` VARCHAR(1000) NOT NULL, PRIMARY KEY (Personid)) ENGINE = InnoDB;

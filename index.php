@@ -30,28 +30,7 @@
 
         // Sql to check if table exists
         $sql_sub_check_table = "SELECT * FROM `subscribers`";
-        // Sql to check if table exists
-        $sql_sub_create_table = "CREATE TABLE `subscribers` (`Personid` int NOT NULL AUTO_INCREMENT, `email` VARCHAR(1000) NOT NULL, PRIMARY KEY (Personid)) ENGINE = InnoDB;";
         
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed due to: " . $conn->connect_error);
-        }
-        else {
-            //Execute query and save variable
-            $checked_sub_table = null;
-            try {
-                $checked_sub_table = $conn->query($sql_sub_check_table);
-            } catch (Exception $execution_error){
-                $check_sub_table_creation = null;
-                try {
-                    $check_sub_table_creation = $conn->query($sql_sub_create_table);
-                } catch (Exception $error) {
-                    die("Not able to create table in database.\n".$error);
-                }
-            }
-        }
-
         $subscribe_id = null;
         $subscribe_edit_email = null;
         $type_of_action = "";
@@ -303,7 +282,7 @@
                         } 
                     } 
                     else { 
-                        die("ERROR: Could not able to execute $sql. " .$mysqli->error); 
+                        die("ERROR: Could not able to execute $sql_sub_check_table. " .$conn->error); 
                     }
                     //Code to edit a row in the database
                     ?>
@@ -318,9 +297,6 @@
                         <h3 class="widget-heading">Sobre nosotros</h3>
                         <p class="mb-4">
                             Somos un centro de crecimiento personal, un espacio para encontrar la paz interior, desarrollar flexibilidad, fuerza, tono muscular y autoconfianza.
-                        </p>
-                        <p class="mb-0">
-                        <a href="contact.php" class="btn-learn-more">Saber más</a>
                         </p>
                     </div>
                     </div>
