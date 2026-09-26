@@ -292,45 +292,117 @@
         <footer id="footer" class="footer light-background">
             <div class="container">
                 <div class="row g-4">
+
+                    <!-- About the Project -->
                     <div class="col-md-4 col-lg-4 mb-3 mb-md-0">
-                    <div class="widget">
-                        <h3 class="widget-heading">Sobre nosotros</h3>
-                        <p class="mb-4">
-                            Somos un centro de crecimiento personal, un espacio para encontrar la paz interior, desarrollar flexibilidad, fuerza, tono muscular y autoconfianza.
-                        </p>
+                        <div class="widget">
+                            <h3 class="widget-heading">About the Project</h3>
+
+                            <p class="mb-4">
+                                This project is a CRUD application developed with PHP,
+                                designed to demonstrate how to manage information
+                                through the fundamental operations of creating,
+                                reading, updating, and deleting records.
+                            </p>
+
+                            <a
+                                href="https://github.com/miguelestradam3/php_crud"
+                                target="_blank"
+                                class="btn btn-primary"
+                            >
+                                View on GitHub
+                            </a>
+                        </div>
                     </div>
-                    </div>
+
+                    <!-- Project Information -->
                     <div class="col-md-4 col-lg-4 pl-lg-5">
                         <div class="widget">
-                            <h3 class="widget-heading">Recent Posts</h3>
+                            <h3 class="widget-heading">Features</h3>
+
                             <ul class="list-unstyled footer-blog-entry">
-                            <li>
-                                <span class="d-block date">Comienzos del año 2018</span>
-                                <a href="#">Abrimos nuestra primera sucursal en la ciudad de Ambato, en el sector de Miraflores. Donde se daban clases de distintos estilos.</a>
-                            </li>
-                            <li>
-                                <span class="d-block date">Finales del año 2022</span>
-                                <a href="#">Mudamos nuestros servicios a Costa Rica.</a>
-                            </li>
+
+                                <li>
+                                    <span class="d-block date">
+                                        PHP
+                                    </span>
+
+                                    <a href="#">
+                                        The application is built with PHP to handle
+                                        the core business logic and functionality.
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <span class="d-block date">
+                                        CRUD
+                                    </span>
+
+                                    <a href="#">
+                                        Manage records using Create, Read, Update,
+                                        and Delete operations.
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <span class="d-block date">
+                                        GitHub
+                                    </span>
+
+                                    <a
+                                        href="https://github.com/miguelestradam3/php_crud"
+                                        target="_blank"
+                                    >
+                                        Explore the complete source code on GitHub.
+                                    </a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Developer -->
                     <div class="col-md-4 col-lg-4 pl-lg-5">
                         <div class="widget">
-                            <h3 class="widget-heading">Conócenos</h3>
+                            <h3 class="widget-heading">Developer</h3>
+
+                            <p>
+                                Miguel Estrada
+                            </p>
+
+                            <p class="mb-3">
+                                Web developer interested in PHP, databases,
+                                web development, and building practical applications.
+                            </p>
+
                             <ul class="list-unstyled social-icons light mb-3">
-                            <li>
-                                <a href="#"><span class="bi bi-facebook"></span></a>
-                            </li>
-                            <li>
-                                <a href=""><span class="bi bi-instagram"></span></a>
-                            </li>
-                            <li>
-                                <a href="mailto:adrianadanza@gmail.com"><span class="bi bi-google"></span></a>
-                            </li>
+
+                                <!-- GitHub -->
+                                <li>
+                                    <a
+                                        href="https://github.com/miguelestradam3"
+                                        target="_blank"
+                                        aria-label="GitHub"
+                                    >
+                                        <span class="bi bi-github"></span>
+                                    </a>
+                                </li>
+
+                                <!-- Project Repository -->
+                                <li>
+                                    <a
+                                        href="https://github.com/miguelestradam3/php_crud"
+                                        target="_blank"
+                                        aria-label="PHP CRUD Repository"
+                                    >
+                                        <span class="bi bi-code-slash"></span>
+                                    </a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </footer>
